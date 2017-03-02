@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mturlular.hesapmakinesi.MainActivity">
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"
+        android:layout_alignLeft="@+id/btn1"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn2"
+        android:background="@android:color/holo_orange_dark" />
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="66dp"
+        android:id="@+id/btn1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_orange_dark" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et1"
+        android:layout_width="100dp"
+        android:layout_above="@+id/btn2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et2"
+        android:layout_above="@+id/btn3"
+        android:layout_alignLeft="@+id/et1"
+        android:layout_alignStart="@+id/et1" />
+
+    <Button
+        android:text="*"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn5"
+        android:layout_below="@+id/btn4"
+        android:layout_alignLeft="@+id/btn4"
+        android:layout_alignStart="@+id/btn4"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_orange_dark" />
+
+    <Button
+        android:text="%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn3"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_below="@+id/btn2"
+        android:layout_alignLeft="@+id/btn2"
+        android:layout_alignStart="@+id/btn2"
+        android:layout_marginTop="26dp" />
+
+    <Button
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/btn4"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_below="@+id/btn3"
+        android:layout_alignLeft="@+id/btn3"
+        android:layout_alignStart="@+id/btn3" />
+
+    <TextView
+        android:text="Sonuc = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_alignBaseline="@+id/btn5"
+        android:layout_alignBottom="@+id/btn5"
+        android:layout_alignLeft="@+id/et2"
+        android:layout_alignStart="@+id/et2"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSonuc"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginLeft="18dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="18dp" />
+</RelativeLayout>
